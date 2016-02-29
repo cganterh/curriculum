@@ -59,101 +59,80 @@ Experiencia
         en C.
     -   Elaboración de preguntas para pruebas.
 
-    \cventry{2010--2011}{Ayudante de Desarrollo de Software}{UTFSM}{Valparaíso}{}{
-        Actividades realizadas:
-        \begin{itemize}
-            \item Administración de sistemas Linux.
-            \item
-                Desarrollo de software relacionado con
-                probabilidades en Delphi.
-            \item
-                Puesta en marcha y mantenimiento de un
-                sistema de control de versiones.
-        \end{itemize}
-    }
+-   2010 - 2011 *Ayudante de Desarrollo de
+    Software*  
+    UTFSM, Valparaíso
 
-    \cventry{2009}{Practicante}{Wetland}{Santiago}{}{
-        Se programan PLCs para su uso en plantas de
-        tratamiento de aguas.
-    }
+    Actividades realizadas:
+    -   Administración de sistemas Linux.
+    -   Desarrollo de software relacionado con
+        probabilidades en Delphi.
+    -   Puesta en marcha y mantenimiento de un sistema
+        de control de versiones.
 
-    \cventry{2005}{Empleado}{CONAC}{Talca}{}{
-        Se diseña un controlador electrónico de nivel de
-        estanque.
-    }
+-   2009 *Practicante*  
+    Wetland, Santiago
 
-    \cventry{2002}{Encargado de Aseo}{Camping Radal}{Reserva Nacional Radal Siete Tazas}{}{}
+    Se programan PLCs para su uso en plantas de
+    tratamiento de aguas.
 
-\section{Conocimientos de Computación}
-\subsection{Sistemas Operativos}
-    \begin{cvcolumns}
-        \cvcolumn{Avanzado}{Linux}
-        \cvcolumn{Medio}{Windows}
-        \cvcolumn{Básico}{BSD}
-    \end{cvcolumns}
+-   2005 *Empleado*  
+    CONAC, Talca
 
-\subsection{Lenguajes de Programación}
-    \begin{cvcolumns}
-        \cvcolumn{Avanzado}{
-            C\newline{}
-            CoffeeScript\newline{}
-            Python
-        }
-        \cvcolumn{Medio}{
-            AWK\newline{}
-            Delphi\newline{}
-            Java\newline{}
-            JavaScript\newline{}
-            Pascal
-        }
-        \cvcolumn{Básico}{
-            Bash\newline{}
-            C++\newline{}
-            Ladder\newline{}
-            MATLAB\newline{}
-            MIPS\newline{}
-            PHP\newline{}
-            Visual Basic
-        }
-    \end{cvcolumns}
+    Se diseña un controlador electrónico de nivel de
+    estanque.
 
-\subsection{Otros Lenguajes}
-    \begin{cvcolumns}
-        \cvcolumn{Avanzado}{
-            CSS\newline{}
-            HTML5\newline{}
-            JSON\newline{}
-            make\newline{}
-            Markdown\newline{}
-            SCSS
-        }
-        \cvcolumn{Medio}{
-            SVG\newline{}
-            Verilog\newline{}
-            XML\newline{}
-            YAML\newline{}
-        }
-        \cvcolumn{Básico}{
-            SQL
-        }
-    \end{cvcolumns}
+-   2002 *Encargado de Aseo*  
+    Camping Radal, Reserva Nacional Radal Siete Tazas
 
-\subsection{Frameworks}
-    \begin{cvcolumns}
-        \cvcolumn{Avanzado}{
-            Tornado Web
-        }
-        \cvcolumn{Básico}{
-            Django\newline{}
-            Flask\newline{}
-            Ruby on Rails
-        }
-    \end{cvcolumns}
+Conocimientos de Computación
+============================
 
-\section{Intereses}
-    \cvlistitem{Astronomía}
-    \cvlistitem{Ciencia}
-    \cvlistitem{Cocina}
-    \cvlistitem{Programación}
+Sistemas Operativos
+-------------------
 
-\end{document}
+| Avanzado | Medio   | Básico |
+| -------- | ------- | ------ |
+| Linux    | Windows | BSD    |
+
+Lenguajes de Programación
+-------------------------
+
+| Avanzado     | Medio      | Básico       |
+| ------------ | ---------- | ------------ |
+| C            | AWK        | Bash         |
+| CoffeeScript | Delphi     | C++          |
+| Python       | Java       | Ladder       |
+|              | JavaScript | MATLAB       |
+|              | Pascal     | MIPS         |
+|              |            | PHP          |
+|              |            | Visual Basic |
+
+Otros Lenguajes
+---------------
+
+| Avanzado | Medio   | Básico |
+| -------- | ------- | ------ |
+| CSS      | SVG     | SQL    |
+| HTML5    | Verilog |        |
+| JSON     | XML     |        |
+| make     | YAML    |        |
+| Markdown |         |        |
+| SCSS     |         |        |
+
+Frameworks
+----------
+
+| Avanzado    | Medio | Básico        |
+| ----------- | ----- | ------------- |
+| Tornado Web |       | Django        |
+|             |       | Flask         |
+|             |       | Ruby on Rails |
+
+Intereses
+=========
+
+-   Astronomía
+-   Ciencia
+-   Cocina
+-   Programación
