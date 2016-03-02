@@ -1,15 +1,9 @@
-sources = $(wildcard *.tex)
-targets = $(sources:.tex=.pdf)
-
 .PHONY: all clean
 
-all: $(targets)
-
-%.pdf: %.tex
-	xelatex $<
-
-view: $(targets)
-	xdg-open $^
+all:
+	$(MAKE) -C latex all
+	cp latex/*.pdf pdf
 
 clean:
-	rm -f *.aux *.log *.out $(targets)
+	$(MAKE) -C latex clean
+	# cd pdf && rm -f *.pdf

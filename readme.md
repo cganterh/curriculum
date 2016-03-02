@@ -1,3 +1,11 @@
+In this repo you'll find versions of my cv in different languages.
+
+The PDF versions are available here:
+
+- English
+- [Spanish](pdf/es_cv_cristobal_ganter.pdf)
+- German
+
 Datos Personales
 ================
 
