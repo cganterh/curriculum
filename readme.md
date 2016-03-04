@@ -24,8 +24,8 @@ Idiomas
 -   Inglés: Avanzado
 -   Alemán: Medio (Sprachdiplom nivel 2 aprobado)
 
-Formación académica
-===================
+Educación
+=========
 
 -   2006 - 2016 *Ingeniero Civil Electrónico*  
     Universidad Técnica Federico Santa María, Valparaíso  
@@ -37,7 +37,10 @@ Formación académica
 Experiencia
 ===========
 
--   2015 *Asesor de MongoDB*  
+-   2015 *Freelancer*
+    Reiser Technologies, Valparaíso
+
+-   2014 *Asesor de MongoDB*  
     Xompass, Valparaíso
 
     Se asesora a Xompass para optimizar su base de datos
