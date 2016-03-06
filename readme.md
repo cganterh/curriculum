@@ -140,6 +140,17 @@ Frameworks
 |             |       | Flask         |
 |             |       | Ruby on Rails |
 
+Herramientas
+------------
+
+| Avanzado         | Medio |
+| ---------------- | ----- |
+| GIT              | GIMP  |
+| Inkscape         |       |
+| LibreOffice      |       |
+| Microsoft Office |       |
+| GNUCash          |       |
+
 Intereses
 =========
 
