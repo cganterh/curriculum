@@ -1,15 +1,17 @@
+.DEFAULT_GOAL = all
+
 sources = $(wildcard *.tex)
 targets = $(sources:.tex=.pdf)
 
-.PHONY: all clean
+include ../view.mk
 
+.PHONY: all
 all: $(targets)
 
 %.pdf: %.tex
 	xelatex $<
 
-view: $(targets)
-	xdg-open $^
 
+.PHONY: clean
 clean:
 	rm -f *.aux *.log *.out $(targets)
