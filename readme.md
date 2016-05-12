@@ -2,7 +2,7 @@ In this repo you'll find versions of my cv in different languages.
 
 The PDF versions are available here:
 
-- English
+- [English](pdf/en_cv_cristobal_ganter.pdf)
 - [Spanish](pdf/es_cv_cristobal_ganter.pdf)
 - German
 
@@ -13,8 +13,7 @@ Datos Personales
 -   Teléfono: +56 9 7968 7919
 -   Email: <cganterh@gmail.com>
 -   Página Web: [www.cganterh.net](http://www.cganterh.net)
--   LinkedIn:
-    [cganterh](https://cl.linkedin.com/in/cganterh)
+-   LinkedIn: [cganterh](https://cl.linkedin.com/in/cganterh)
 -   Github: [cganterh](https://github.com/cganterh)
 
 Idiomas
