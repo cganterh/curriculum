@@ -1,216 +1,220 @@
-\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,sans]{moderncv}
+  \usepackage[scale=0.85]{geometry}
 
-% moderncv themes
-\moderncvstyle{fancy}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{purple}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+  \moderncvstyle{fancy}
+  \moderncvcolor{purple}
+  \nopagenumbers{}
+  \setlength{\hintscolumnwidth}{3.51cm}
 
-% character encoding
-% \usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
-
-% adjust the page margins
-\usepackage[scale=0.8]{geometry}
-\setlength{\hintscolumnwidth}{3.51cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
-
-% personal data
-\name{Cristóbal}{Ganter}
-% \title{Currículum Vítae}                               % optional, remove / comment the line if not wanted
-\phone[mobile]{+56~9~7968~7919}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{cganterh@gmail.com}                               % optional, remove / comment the line if not wanted
-\homepage{www.cganterh.net}                         % optional, remove / comment the line if not wanted
-\social[linkedin]{cganterh}                        % optional, remove / comment the line if not wanted
-\social[github]{cganterh}                              % optional, remove / comment the line if not wanted
-
+  \name{Cristóbal}{Ganter}
+  \phone[mobile]{+56~9~7968~7919}
+  \email{cganterh@gmail.com}
+  \homepage{www.cganterh.net}
+  \social[linkedin]{cganterh}
+  \social[github]{cganterh}
 
 \begin{document}
+  \makecvtitle{}
 
-\makecvtitle
-
-\section{Idiomas}
+  \section{Idiomas}
     \cvitem{Español}{Idioma materno}
     \cvitem{Inglés}{Avanzado}
-    \cvitemwithcomment{Alemán}{Medio}{Sprachdiplom nivel 2 aprobado.}
+    \cvitemwithcomment{Alemán}{Medio}
+      {Sprachdiplom nivel 2 aprobado.}
 
-\section{Educación}
-\cventry{2006--2016}{Ingeniero Civil Electrónico}{Universidad Técnica Federico Santa María}{Valparaíso}{}{Mención Computadores, Sub-Mención Informática}  % arguments 3 to 6 can be left empty
-\cventry{1994--2005}{Educación Básica y Media}{Colegio Alemán de Santiago}{Santiago}{}{}  % arguments 3 to 6 can be left empty
+  \section{Educación}
+    \cventry{2006--2016}{Ingeniero Civil Electrónico}
+      {Universidad Técnica Federico Santa María}{Valparaíso}
+      {}
+      {Mención Computadores, Sub-Mención Informática}
 
-% \section{Master thesis}
-% \cvitem{title}{\emph{Title}}
-% \cvitem{supervisors}{Supervisors}
-% \cvitem{description}{Short thesis abstract}
+    \cventry{1994--2005}{Educación Básica y Media}
+      {Colegio Alemán de Santiago}{Santiago}{}
+      {}
 
-\section{Experiencia}
-    \cventry{2016--presente}{Asesor}{UTFSM}{Valparaíso}{}{
-        Asesoría para el proyecto: ``Desarrollo de plataforma Interactiva TIC para salas SCALE-UP''.
+  \section{Experiencia}
+    \cventry{2016--presente}{Asesor}
+    {UTFSM}{Valparaíso}{}
+    {
+      Asesoría para el proyecto: ``Desarrollo de plataforma
+      Interactiva TIC para salas SCALE-UP''.
     }
 
     \pagebreak[0]
 
-    \cventry{2014--presente}{Freelancer}{Reiser Technologies}{Valparaíso}{}{
+    \cventry{2014--2015}{Freelancer}
+      {Reiser Technologies}{Valparaíso}{}
+      {
         Desarrollo front-end.
-    }
+      }
 
     \pagebreak[0]
 
-    \cventry{2014}{Asesor de MongoDB}{Xompass}{Valparaíso}{}{
+    \cventry{2014}{Asesor de MongoDB}
+      {Xompass}{Valparaíso}{}
+      {
         Asesoría para optimizar la base de datos MongoDB de
         Xompass.
-    }
+      }
 
     \pagebreak[0]
 
-    \cventry{2013}{Especialista en Computación}{Proyecto FIC SURHGE}{Valparaíso}{}{
+    \cventry{2013}{Especialista en Computación}
+      {Proyecto FIC SURHGE}{Valparaíso}{}
+      {
         Actividades realizadas:
         \begin{itemize}
-            \item Administración sistemas Linux.
-            \item Análisis de datos.
-            \item Programación de aplicación web.
-            \item Programación modelos matemáticos.
-            \item Machine learning.
+          \item Administración sistemas Linux.
+          \item Análisis de datos.
+          \item Programación de aplicación web.
+          \item Programación modelos matemáticos.
+          \item Machine learning.
         \end{itemize}
-    }
+      }
 
     \pagebreak[0]
 
-    \cventry{2011--2012}{Ayudante de Cátedra}{UTFSM}{Valparaíso}{}{
+    \cventry{2011--2012}{Ayudante de Cátedra}
+      {UTFSM}{Valparaíso}{}
+      {
         \emph{Estructura de Datos y Algoritmos}.\newline{}
         Actividades realizadas:
         \begin{itemize}
-            \item Ayudantías presenciales.
-            \item Corrección de pruebas y tareas.
-            \item
-                Elaboración de material para taller de
-                programación en C.
-            \item Elaboración de preguntas para pruebas.
+          \item Ayudantías presenciales.
+          % \item Corrección de pruebas y tareas.            %delete
+          \item Desarrollo de taller de programación en C.
+          % \item Elaboración de preguntas para pruebas.     %delete
         \end{itemize}
-    }
+      }
 
     \pagebreak[0]
 
-    \cventry{2010--2011}{Ayudante de Desarrollo de Software}{UTFSM}{Valparaíso}{}{
+    \cventry{2010--2011}{Ayudante de Desarrollo de Software}
+      {UTFSM}{Valparaíso}{}
+      {
         Actividades realizadas:
         \begin{itemize}
-            \item Administración de sistemas Linux.
-            \item
-                Desarrollo de software relacionado con
-                probabilidades en Delphi.
-            \item
-                Puesta en marcha y mantenimiento de un
-                sistema de control de versiones.
+          \item Administración de sistemas Linux.
+          \item Desarrollo de software relacionado con probabilidades en Delphi.
+          \item Puesta en marcha y mantenimiento de un sistema de control de versiones.
         \end{itemize}
-    }
+      }
 
     \pagebreak[0]
 
-    \cventry{2009}{Practicante}{Wetland}{Santiago}{}{
-        Programación de PLCs para su uso en plantas de
-        tratamiento de aguas.
-    }
+    \cventry{2009}{Practicante}
+      {Wetland}{Santiago}{}
+      {
+        Programación de PLCs para su uso en plantas de tratamiento de aguas.
+      }
 
     \pagebreak[0]
 
-    \cventry{2005}{Empleado}{CONAC}{Talca}{}{
-        Diseño de un controlador electrónico de nivel de
-        estanque.
-    }
+    \cventry{2005}{Empleado}
+      {CONAC}{Talca}{}
+      {
+        Diseño de un controlador electrónico de nivel de estanque.
+      }
+    %
+    % \pagebreak[0]
+    %
+    % \cventry{2002}{Encargado de Aseo}
+    %   {Camping Radal}{Reserva Nacional Radal Siete Tazas}{}
+    %   {}
 
-    \pagebreak[0]
+\pagebreak[0]
 
-    \cventry{2002}{Encargado de Aseo}{Camping Radal}{Reserva Nacional Radal Siete Tazas}{}{}
-
-\section{Conocimientos de Computación}
-\subsection{Sistemas Operativos}
-    \begin{cvcolumns}
+  \section{Conocimientos de Computación}
+    \subsection{Sistemas Operativos}
+      \begin{cvcolumns}
         \cvcolumn{Avanzado}{Linux}
         \cvcolumn{Medio}{Windows}
         \cvcolumn{Básico}{BSD}
-    \end{cvcolumns}
+      \end{cvcolumns}
 
-\pagebreak[0]
+    \pagebreak[0]
 
-\subsection{Lenguajes de Programación}
-    \begin{cvcolumns}
+    \subsection{Lenguajes de Programación}
+      \begin{cvcolumns}
         \cvcolumn{Avanzado}{
-            Python\newline{}
-            C\newline{}
-            CoffeeScript\newline{}
-            JavaScript
+          Python\newline{}
+          C\newline{}
+          CoffeeScript\newline{}
+          JavaScript
         }
         \cvcolumn{Medio}{
-            AWK\newline{}
-            Java\newline{}
-            Delphi\newline{}
-            Pascal
+          AWK\newline{}
+          Java\newline{}
+          Delphi\newline{}
+          Pascal
         }
         \cvcolumn{Básico}{
-            PHP\newline{}
-            Bash\newline{}
-            MATLAB\newline{}
-            MIPS\newline{}
-            Visual Basic\newline{}
-            C++\newline{}
-            Ladder
+          PHP\newline{}
+          Bash\newline{}
+          MATLAB\newline{}
+          MIPS\newline{}
+          Visual Basic\newline{}
+          C++\newline{}
+          Ladder
         }
-    \end{cvcolumns}
+      \end{cvcolumns}
 
-\pagebreak[0]
+    \pagebreak[0]
 
-\subsection{Otros Lenguajes}
-    \begin{cvcolumns}
+    \subsection{Otros Lenguajes}
+      \begin{cvcolumns}
         \cvcolumn{Avanzado}{
-            HTML5\newline{}
-            Markdown\newline{}
-            JSON\newline{}
-            CSS\newline{}
-            SCSS\newline{}
-            make
+          HTML5\newline{}
+          Markdown\newline{}
+          JSON\newline{}
+          CSS\newline{}
+          SCSS\newline{}
+          Makefile
         }
         \cvcolumn{Medio}{
-            YAML\newline{}
-            SVG\newline{}
-            XML\newline{}
-            Verilog
+          YAML\newline{}
+          SVG\newline{}
+          XML\newline{}
+          Verilog
         }
         \cvcolumn{Básico}{
-            SQL
+          SQL
         }
-    \end{cvcolumns}
+      \end{cvcolumns}
 
-\pagebreak[0]
+    \pagebreak[0]
 
-\subsection{Frameworks}
-    \begin{cvcolumns}
+    \subsection{Frameworks}
+      \begin{cvcolumns}
         \cvcolumn{Avanzado}{
-            Tornado Web
+          Tornado Web
         }
         \cvcolumn{Básico}{
-            Flask\newline{}
-            Django\newline{}
-            Ruby on Rails
+          Flask\newline{}
+          Django\newline{}
+          Ruby on Rails
         }
-    \end{cvcolumns}
+      \end{cvcolumns}
 
-\pagebreak[0]
+    \pagebreak[0]
 
-\subsection{Herramientas}
-    \begin{cvcolumns}
+    \subsection{Herramientas}
+      \begin{cvcolumns}
         \cvcolumn{Avanzado}{
-            GIT\newline{}
-            Inkscape\newline{}
-            LibreOffice\newline{}
-            Microsoft Office\newline{}
-            GNUCash
+          GIT\newline{}
+          Inkscape\newline{}
+          LibreOffice\newline{}
+          Microsoft Office\newline{}
+          GNUCash
         }
         \cvcolumn{Medio}{
-            GIMP
+          GIMP
         }
-    \end{cvcolumns}
+      \end{cvcolumns}
 
-\pagebreak[0]
+  \pagebreak[0]
 
-\section{Intereses}
+  \section{Intereses}
     \cvlistitem{Programación}
     \cvlistitem{Ciencia}
     \cvlistitem{Cocina}
