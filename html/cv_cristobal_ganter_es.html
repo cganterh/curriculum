@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><title>Crist&oacute;bal Ganter - CV</title>
+
+<style>
+    body {
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: 25% 1em 1fr;
+        grid-template-areas:
+            "contact . name   "
+            "headers . content";
+    }
+
+    body * {
+        vertical-align: middle;
+    }
+
+    h1 {
+        grid-area: name;
+    }
+
+    #contact {
+        grid-area: contact;
+    }
+
+    #contact-header {
+        display: none;
+    }
+
+    h2, h3, #contact {
+        border-right: 1px solid purple;
+        padding-right: 1em;
+    }
+
+    h2, h3 {
+        grid-column: headers-start / span 1 !important;
+        color: purple;
+    }
+
+    h2:has(+ h3) {
+        margin-bottom: 0;
+        padding-bottom: 1em;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    h2 + *, h3 + * {
+        grid-column: content-start / span 1;
+    }
+
+    h2, h3, h2 + *, h3 + * {
+        padding: .5em;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+    dl {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .place, .period + * {
+        flex-grow: 1;
+    }
+
+    dd {
+        margin: 0;
+    }
+
+    dt::after, dd::after {
+        content: ", ";
+    }
+
+    @media print {
+        meter {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+        }
+    }
+</style>
+
+<h1>Crist&oacute;bal Ganter</h1>
+
+<h2 id="contact-header">Contacto</h2>
+
+<dl id="contact">
+    <dt>Tel&eacute;fono</dt>
+    <dd><a href="tel:+56943879292">+56 9 4387 9292</a></dd>
+
+    <dt>E-Mail</dt>
+    <dd><a href="mailto:cganterh@gmail.com">cganterh@gmail.com</a></dd>
+
+    <!--<dt>Web</dt>-->
+    <!--<dd><a href="https://cristobal.ganter.cl">cristobal.ganter.cl</a></dd>-->
+
+    <dt>LinkedIn</dt>
+    <dd><a href="https://www.linkedin.com/in/cganterh/">cganterh</a></dd>
+
+    <dt>GitHub</dt>
+    <dd><a href="https://github.com/cganterh">cganterh</a></dd>
+</dl>
+
+<h2>Idiomas</h2>
+
+<dl>
+    <dt>Espa&ntilde;ol</dt>
+    <dd>Idioma materno</dd>
+
+    <dt>Ingl&eacute;s</dt>
+    <dd>Fluido</dd>
+
+    <dt>Alem&aacute;n</dt>
+    <dd>Medio</dd>
+    <dd class="comment">Sprachdiplom nivel 2</dd>
+</dl>
+
+<h2>Educaci&oacute;n</h2>
+
+<div class="cv-entry-list">
+    <div class="cv-info">
+        <h3 class="cv-title">Ingeniero Civil Electr&oacute;nico</h3>
+        <p class="cv-institution">Universidad T&eacute;cnica Federico Santa Mar&iacute;a</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <p class="cv-details">Menci&oacute;n Computadores, Submenci&oacute;n Inform&aacute;tica</p>
+    </div>
+    <div class="cv-period">2006 - 2016</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Educaci&oacute;n B&aacute;sica y Media</h3>
+        <p class="cv-institution">Colegio Alem&aacute;n de Santiago</p>
+        <p class="cv-place">Santiago, Chile</p>
+    </div>
+    <div class="cv-period">1994 - 2005</div>
+</div>
+
+<h2>Experiencia Laboral</h2>
+
+<div class="cv-entry-list">
+    <div class="cv-info">
+        <h3 class="cv-title">R&amp;D Engineeeing, Staff Engineer</h3>
+        <p class="cv-institution">Synopsys</p>
+        <p class="cv-place">Santiago, Chile</p>
+        <p class="cv-details">
+            Actividades realizadas:
+            <ul>
+                <li>Diseño e implementación de software en Python y C++.</li>
+                <li>Diseño e implementación de aplicaciones full-stack (MongoDB, Python, Javascript).</li>
+                <li>Implementación de algoritmos de grafos.</li>
+                <li>Desarrollo de imagenes de Docker para desarrollo de software y distribución.</li>
+                <li>Mantenimiento de software de visualización cientifica.</li>
+                <li>Diseño y mantención de sistemas de integración continua y despliegue continuo.</li>
+                <li>Empaquetado y distribución de software.</li>
+                <li>Supervición y capacitación de colegas nuevos.</li>
+            </ul>
+        </p>
+    </div>
+    <div class="cv-period">2016 - Presente</div>
+    <!--<dt>R&amp;D Engineeeing, Staff Engineer</dt>-->
+    <!--<dd>Synopsys</dd>-->
+    <!--<dd class="place">Santiago, Chile</dd>-->
+    <!--<dd class="period">2016 - Presente</dd>-->
+    <!--<dd>-->
+    <!--    Actividades realizadas:-->
+    <!--    <ul>-->
+    <!--        <li>Diseño e implementación de software en Python y C++.</li>-->
+    <!--        <li>Diseño e implementación de aplicaciones full-stack (MongoDB, Python, Javascript).</li>-->
+    <!--        <li>Implementación de algoritmos de grafos.</li>-->
+    <!--        <li>Desarrollo de imagenes de Docker para desarrollo de software y distribución.</li>-->
+    <!--        <li>Mantenimiento de software de visualización cientifica.</li>-->
+    <!--        <li>Diseño y mantención de sistemas de integración continua y despliegue continuo.</li>-->
+    <!--        <li>Empaquetado y distribución de software.</li>-->
+    <!--        <li>Supervición y capacitación de colegas nuevos.</li>-->
+    <!--    </ul>-->
+    <!--</dd>-->
+    <!---->
+    <dt>Asesor</dt>
+    <dd>Universidad T&eacute;cnica Federico Santa Mar&iacute;a</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2016 - 2016</dd>
+    <dd>Asesor&iacute;a para el proyecto: "Desarrollo de plataforma TIC para salas SCALE-UP".</dd>
+
+    <dt>Freelancer</dt>
+    <dd>Reiser Technologies</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2014 - 2015</dd>
+    <dd>Desarrollo front-end.</dd>
+
+    <dt>Asesor de MongoDB</dt>
+    <dd>Xompass</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2014 - 2014</dd>
+    <dd>Asesoría para optimizar la base de datos MongoDB de Xompass.</dd>
+    
+    <dt>Especialista en Computaci&oacute;n</dt>
+    <dd>Proyecto FIC SURHGE</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2013 - 2013</dd>
+    <dd>
+        Actividades realizadas:
+        <ul>
+            <li>Administraci&oacute;n de sistemas Linux.</li>
+            <li>An&aacute;lisis de datos.</li>
+            <li>Desarrollo de aplicacion web.</li>
+            <li>Programaci&oacute;n de modelos matem&aacute;ticos.</li>
+            <li>Utilizaci&oacute;n de herramientas de machine learning.</li>
+        </ul>
+    </dd>
+
+    <dt>Ayudante de C&aacute;tendra</dt>
+    <dd>Universidad T&eacute;cnica Federico Santa Mar&iacute;a</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2011 - 2012</dd>
+    <dd>
+        Ramo: Estructura de Datos y Algoritmos.<br>
+        Actividades realizadas:
+        <ul>
+            <li>Ayudant&iacute;as presenciales.</li>
+            <!--<li>Correcci&oacute;n de pruebas y tareas.</li>-->
+            <li>Desarrollo de taller de programaci&oacute;n en C.</li>
+            <!--<li>Elaboraci&oacute;n de preguntas para pruebas.</li>-->
+        </ul>
+    </dd>
+
+    <dt>Ayudante de Desarrolo de Software</dt>
+    <dd>Universidad T&eacute;cnica Federico Santa Mar&iacute;a</dd>
+    <dd class="place">Valepara&iacute;so, Chile</dd>
+    <dd class="period">2010 - 2011</dd>
+    <dd>
+        Actividades realizadas:
+        <ul>
+            <li>Administraci&oacute;n de sistemas Linux.</li>
+            <li>Desarrollo de software relacionado con probabilidades en Delphi.</li>
+            <li>Puesta en marcha y mantenimiento de sistema de control de versiones.</li>
+        </ul>
+    </dd>
+
+    <dt>Practicante</dt>
+    <dd>Wetland</dd>
+    <dd class="place">Santiago, Chile</dd>
+    <dd class="period">2009 - 2009</dd>
+    <dd>Programación de PLCs para su uso en plantas de tratamiento de aguas servidas.</dd>
+
+    <dt>Empleado</dt>
+    <dd>CONAC</dd>
+    <dd class="place">Talca, Chile</dd>
+    <dd class="period">2005 - 2005</dd>
+    <dd>Diseño de un controlador electrónico de nivel de estanque.</dd>
+
+    <!--<dt>Encargado de Aseo</dt>-->
+    <!--<dd>Camping Radal</dd>-->
+    <!--<dd class="place">Reserva Nacional Radal Siete Tazas, Chile</dd>-->
+    <!--<dd class="period">2002 - 2002</dd>-->
+</div>
+
+<h2>Conocimientos en Computaci&oacute;n</h2>
+
+<h3>Sistemas Operativos</h3>
+
+<div>
+    <p><label for="os-linux">Linux</label> <meter id="os-linux" value="0.90">90%</meter></p>
+    <p><label for="os-windows">Windows</label> <meter id="os-windows" value="0.80">80%</meter></p>
+</div>
+
+<h3>Lenguajes de Programaci&oacute;n</h3>
+
+<div>
+    <p><label for="lang-python">Python</label> <meter id="lang-python" value="0.95">95%</meter></p>
+    <p><label for="lang-cpp">C++</label> <meter id="lang-cpp" value="0.80">80%</meter></p>
+    <p><label for="lang-javascript">Javascript</label> <meter id="lang-javascript" value="0.79">79%</meter></p>
+    <p><label for="lang-c">C</label> <meter id="lang-c" value="0.75">75%</meter></p>
+    <p><label for="lang-bash">Bash</label> <meter id="lang-bash" value="0.70">70%</meter></p>
+    <p><label for="lang-awk">Awk</label> <meter id="lang-awk" value="0.60">60%</meter></p>
+    <p><label for="lang-tcl">Tcl</label> <meter id="lang-tcl" value="0.30">30%</meter></p>
+</div>
+
+<h3>Otros Lenguajes</h3>
+
+<div>
+    <p><label for="lang-html5">HTML5</label> <meter id="lang-html5" value="0.90">90%</meter></p>
+    <p><label for="lang-markdown">Markdown</label> <meter id="lang-markdown" value="0.95">95%</meter></p>
+    <p><label for="lang-json">JSON</label> <meter id="lang-json" value="0.95">95%</meter></p>
+    <p><label for="lang-css">CSS</label> <meter id="lang-css" value="0.80">80%</meter></p>
+    <p><label for="lang-yaml">YAML</label> <meter id="lang-yaml" value="0.80">80%</meter></p>
+    <p><label for="lang-makefile">Makefile</label> <meter id="lang-makefile" value="0.70">70%</meter></p>
+    <p><label for="lang-xml">XML</label> <meter id="lang-xml" value="0.60">60%</meter></p>
+    <p><label for="lang-svg">SVG</label> <meter id="lang-svg" value="0.60">60%</meter></p>
+    <p><label for="lang-sql">SQL</label> <meter id="lang-sql" value="0.30">30%</meter></p>
+    <p><label for="lang-latex">LaTeX</label> <meter id="lang-latex" value="0.20">20%</meter></p>
+</div>
+
+<h3>Frameworks</h3>
+
+<div>
+    <p><label for="framework-tornado">Tornado</label> <meter id="framework-tornado" value="0.95">95%</meter></p>
+</div>
+
+<h3>Herramientas</h3>
+
+<div>
+    <p><label for="tool-git">Git</label> <meter id="tool-git" value="0.95">95%</meter></p>
+    <p><label for="tool-inkscape">Inkscape</label> <meter id="tool-inkscape" value="0.85">85%</meter></p>
+    <p><label for="tool-docker">Docker</label> <meter id="tool-docker" value="0.87">87%</meter></p>
+    <p><label for="tool-vim">Vim</label> <meter id="tool-vim" value="0.40">40%</meter></p>
+    <p><label for="tool-ms-office">MS Office</label> <meter id="tool-ms-office" value="0.80">80%</meter></p>
+    <p><label for="tool-libreoffice">LibreOffice</label> <meter id="tool-libreoffice" value="0.80">80%</meter></p>
+    <p><label for="tool-gimp">GIMP</label> <meter id="tool-gimp" value="0.70">70%</meter></p>
+</div>
+
+<h2>Intereses</h2>
+
+<ul>
+    <li>Desarrollo de software</li>
+    <li>Ciencia</li>
+    <li>Cocina</li>
+    <li>Astronom&iacute;a</li>
+    <li>Ciclistmo</li>
+</ul>
