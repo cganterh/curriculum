@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Crist&oacute;bal Ganter - CV</title>
+
+<script src="https://kit.fontawesome.com/6902b0e50e.js" crossorigin="anonymous"></script>
+
+<style>
+    body {
+        font-family: sans-serif;
+        display: grid;
+        grid-template-columns: minmax(min-content, 25%) 1fr;
+        grid-template-areas:
+            "contact name   "
+            "headers content";
+    }
+
+    h1 {
+        grid-area: name;
+    }
+
+    #contact {
+        grid-area: contact;
+    }
+
+    #contact-header {
+        display: none;
+    }
+
+    body > h2, body > h3, #contact {
+        border-right: 1px solid purple;
+        margin: 1rem 1rem 0 0;
+        text-align: right;
+    }
+
+    body > h2, body > h3 {
+        grid-column: headers-start / span 1 !important;
+        color: purple;
+    }
+
+    body > h3 {
+        margin-top: 0 !important;
+        margin-bottom: 0;
+    }
+
+    body > h2 + *, body > h3 + * {
+        grid-column: content-start / span 1;
+        margin-top: 1rem;
+    }
+
+    body > h2, body > h3, body > h2 + *, body > h3 + * {
+        padding: .5rem;
+    }
+
+    ul {
+        list-style-position: inside;
+    }
+
+    .cv-entry-list {
+        display: grid;
+        grid-template-columns: 1fr auto;
+        grid-gap: 1rem;
+    }
+
+    .cv-info {
+        page-break-inside: avoid;
+    }
+
+    .cv-info > * {
+        margin: 0;
+        display: inline;
+    }
+
+    .cv-title::after, .cv-institution::after, .cv-place::after {
+        content: "; ";
+    }
+
+    .cv-info > :nth-last-child(2)::after {
+        content: ".";
+    }
+
+    .cv-institution {
+        font-style: italic;
+    }
+
+    .cv-details {
+        display: block;
+        margin-top: .5rem;
+        margin-left: .5rem;
+    }
+
+    .cv-period {
+        text-align: right;
+    }
+
+    a[href^="tel:"]::before {
+        content: "\f095";
+        font: var(--fa-font-solid);
+        margin-right: .5rem;
+    }
+
+    a[href^="mailto:"]::before {
+        content: "\f0e0";
+        font: var(--fa-font-solid);
+        margin-right: .5rem;
+    }
+
+    a[href^="https://"]::before {
+        content: "\f08e";
+        font: var(--fa-font-brands);
+        margin-right: .5rem;
+    }
+
+    a[href^="https://www.linkedin.com/"]::before {
+        content: "\f08c";
+        font: var(--fa-font-brands);
+        margin-right: .5rem;
+    }
+
+    a[href^="https://github.com"]::before {
+        content: "\f09b";
+        font: var(--fa-font-brands);
+        margin-right: .5rem;
+    }
+
+    #contact dt {
+        display: none;
+    }
+
+    #contact dd {
+        margin: 0;
+    }
+
+    #contact a {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    div:has(meter) {
+        display: grid;
+        grid-template-columns: 5rem 1fr;
+        grid-gap: .5rem;
+    }
+
+    meter {
+        width: 100%;
+    }
+
+    meter::-webkit-meter-optimum-value {
+        background: purple;
+    }
+    meter::-moz-meter-bar { /* Firefox Pseudo Class */
+        background: red;
+    }
+
+    .languages {
+        display: grid;
+        grid-template-columns: auto auto 1fr;
+        grid-gap: .5rem;
+        grid-template-areas:
+            "lang level comment";
+    }
+
+    .languages dt {
+        grid-column: lang-start / span 1;
+        font-weight: bold;
+    }
+
+    .languages dt::after {
+        content: ":";
+    }
+
+    .languages dd {
+        margin: 0;
+    }
+
+    .languages .comment {
+        grid-column: comment-start / span 1;
+        text-align: right;
+        font-style: italic;
+    }
+
+    @media print {
+        meter {
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            appearance: none;
+            height: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            background: linear-gradient(to right, purple calc(var(--v) * 100%), #eee calc(var(--v) * 100%));
+            -webkit-print-color-adjust: exact;
+            print-color-adjust: exact;
+        }
+
+        meter::-webkit-meter-inner-element {
+            display: none;
+        }
+
+        meter::-webkit-meter-bar {
+            display: none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<h1>Crist&oacute;bal Ganter</h1>
+
+<h2 id="contact-header">Contact</h2>
+
+<dl id="contact">
+    <dt>Phone</dt>
+    <dd><a href="tel:+56943879292">+56 9 4387 9292</a></dd>
+
+    <dt>E-Mail</dt>
+    <dd><a href="mailto:cganterh@gmail.com">cganterh@gmail.com</a></dd>
+
+    <dt>LinkedIn</dt>
+    <dd><a href="https://urldefense.com/v3/__https://www.linkedin.com/in/cganterh/__;!!A4F2R9G_pg!fcsg50wF4hV78ULYcapeu_vB8u4b4_H9-cS0yau8Kw2qPJtK3yy8gLf0187rnfuwe4EI68P-ZRaAoIKdmg$">cganterh</a></dd>
+
+    <dt>GitHub</dt>
+    <dd><a href="https://urldefense.com/v3/__https://github.com/cganterh__;!!A4F2R9G_pg!fcsg50wF4hV78ULYcapeu_vB8u4b4_H9-cS0yau8Kw2qPJtK3yy8gLf0187rnfuwe4EI68P-ZRbdfYLHFg$">cganterh</a></dd>
+</dl>
+
+<h2>Summary</h2>
+
+<p>
+      Senior software engineer with deep Python experience in scientific
+      environments. Built and maintained reusable tooling, workflow systems,
+      and engineering infrastructure across semiconductor software teams,
+      combining distributed-systems thinking, scientific-computing depth, and
+      strong technical writing. Strongest fit: senior/staff Python + C++
+      platform or scientific-computing roles in multinational in-office
+      Santiago environments.
+</p>
+
+<h2>Core Strengths</h2>
+
+<ul>
+    <li>Python</li>
+    <li>C++</li>
+    <li>Scientific computing</li>
+    <li>Distributed systems / HPC</li>
+    <li>Workflow orchestration</li>
+    <li>Developer tooling / DevEx</li>
+    <li>DevOps / CI/CD</li>
+    <li>Technical writing / architecture proposals</li>
+</ul>
+
+<h2>Languages</h2>
+
+<dl class="languages">
+    <dt>Spanish</dt>
+    <dd>Native</dd>
+
+    <dt>English</dt>
+    <dd>Fluent</dd>
+
+    <dt>German</dt>
+    <dd>Intermediate</dd>
+    <dd class="comment">Sprachdiplom level 2</dd>
+</dl>
+
+<h2>Work Experience</h2>
+
+<div class="cv-entry-list">
+    <div class="cv-info">
+        <h3 class="cv-title">Senior Software Engineer</h3>
+        <p class="cv-institution">Synopsys, Silicon Technology Group</p>
+        <p class="cv-place">Santiago, Chile</p>
+        <div class="cv-details">
+            Selected contributions:
+            <ul>
+                <li>
+                    Built and maintained Python-heavy internal platform and developer-tooling.
+                </li>
+                <li><strong>45+ Python packages authored or maintained</strong>, creating reusable tooling and platform components rather than one-off scripts.</li>
+                <li>Helped drive adoption of a shared workflow-scheduling
+              library across multiple internal teams while mentoring teammates
+              on usage and development, strengthening distributed workflow
+              execution and technical enablement.</li>
+                <li>Contributed across <strong>~368 Jira issues touched; 230+
+              resolved across 6+ work areas over ~6 years</strong>, showing
+              breadth across product, tooling, and platform work.</li>
+                <li>Produced architecture proposals, design-principles
+              material, and technical writing.</li>
+                <li>Built scientific and data-engineering capabilities around
+              OpenVDB-backed processing and BSON serialization into MongoDB,
+              adding depth beyond typical application-layer engineering.</li>
+                <li>Design and implementation of software in Python and C++;
+              maintenance of scientific visualization software (Sentaurus
+              Visual) and integration with Sentaurus Workbench.</li>
+                <li>Full-stack application work (MongoDB, Python, JavaScript)
+              and graph-algorithm implementation.</li>
+                <li>Development of Docker images for software development and
+              distribution; design and maintenance of continuous integration
+              and continuous deployment pipelines; software packaging and
+              distribution.</li>
+                <li>Supervision and onboarding training of new colleagues.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cv-period">2016 - Present</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Selected Project Evidence</h3>
+        <p class="cv-institution">Synopsys, Silicon Technology Group</p>
+        <p class="cv-place">Santiago, Chile</p>
+        <div class="cv-details">
+            <ul>
+                <li><strong>Shared workflow-scheduling library work:</strong> strongest evidence for Python, orchestration, HPC, and cross-team adoption.</li>
+                <li><strong>Sentaurus Visual Python work:</strong> strongest current evidence for delivery in a complex Python + C++ scientific codebase.</li>
+                <li><strong>OpenVDB data pipeline:</strong> evidence for scientific and data-engineering depth, including MongoDB/BSON data work.</li>
+                <li><strong>AI/LLM agent-system work:</strong> evidence for AI/LLM engineering with governance and security framing.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cv-period">2016 - Present</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Consultant</h3>
+        <p class="cv-institution">Universidad T&eacute;cnica Federico Santa Mar&iacute;a (UTFSM)</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <p class="cv-details">Consulting for the project: &ldquo;Development of an ICT platform for SCALE-UP classrooms&rdquo;.</p>
+    </div>
+    <div class="cv-period">2016 - 2016</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Freelancer</h3>
+        <p class="cv-institution">Reiser Technologies</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <p class="cv-details">Front-end development.</p>
+    </div>
+    <div class="cv-period">2014 - 2015</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">MongoDB Consultant</h3>
+        <p class="cv-institution">Xompass</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <p class="cv-details">Consulting to optimize Xompass&rsquo;s MongoDB database.</p>
+    </div>
+    <div class="cv-period">2014 - 2014</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Computing Specialist</h3>
+        <p class="cv-institution">FIC SURHGE Project</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <div class="cv-details">
+            Selected activities:
+            <ul>
+                <li>Linux systems administration.</li>
+                <li>Data analysis.</li>
+                <li>Web application development.</li>
+                <li>Programming of mathematical models.</li>
+                <li>Use of machine-learning tools.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cv-period">2013 - 2013</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Teaching Assistant</h3>
+        <p class="cv-institution">Universidad T&eacute;cnica Federico Santa Mar&iacute;a (UTFSM)</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <div class="cv-details">
+            Course: Data Structures and Algorithms.<br>
+            Selected activities:
+            <ul>
+                <li>In-person tutorial sessions.</li>
+                <li>Development of a C programming workshop.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cv-period">2011 - 2012</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Software Development Assistant</h3>
+        <p class="cv-institution">Universidad T&eacute;cnica Federico Santa Mar&iacute;a (UTFSM)</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <div class="cv-details">
+            Selected activities:
+            <ul>
+                <li>Linux systems administration.</li>
+                <li>Development of probability-related software in Delphi.</li>
+                <li>Setup and maintenance of a version control system.</li>
+            </ul>
+        </div>
+    </div>
+    <div class="cv-period">2010 - 2011</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Intern</h3>
+        <p class="cv-institution">Wetland</p>
+        <p class="cv-place">Santiago, Chile</p>
+        <p class="cv-details">PLC programming for wastewater treatment plants.</p>
+    </div>
+    <div class="cv-period">2009 - 2009</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Intern</h3>
+        <p class="cv-institution">CONAC</p>
+        <p class="cv-place">Talca, Chile</p>
+        <p class="cv-details">Design of an electronic tank-level controller.</p>
+    </div>
+    <div class="cv-period">2005 - 2005</div>
+</div>
+
+<h2>Education</h2>
+
+<div class="cv-entry-list">
+    <div class="cv-info">
+        <h3 class="cv-title">Ingeniero Civil Electr&oacute;nico (Electronic Civil Engineer)</h3>
+        <p class="cv-institution">Universidad T&eacute;cnica Federico Santa Mar&iacute;a (UTFSM)</p>
+        <p class="cv-place">Valpara&iacute;so, Chile</p>
+        <p class="cv-details">Major in Computers, minor in Informatics.</p>
+    </div>
+    <div class="cv-period">2006 - 2016</div>
+
+    <div class="cv-info">
+        <h3 class="cv-title">Primary and Secondary Education</h3>
+        <p class="cv-institution">Colegio Alem&aacute;n de Santiago</p>
+        <p class="cv-place">Santiago, Chile</p>
+        <div class="cv-details"></div>
+    </div>
+    <div class="cv-period">1994 - 2005</div>
+</div>
+
+<h2 style="page-break-inside: avoid; page-break-after: avoid; page-break-before: always;">Computing Skills</h2>
+
+<h3>Operating Systems</h3>
+
+<div>
+    <label for="os-linux">Linux</label> <meter id="os-linux" value="0.90" style="--v: 0.90">90%</meter>
+    <label for="os-windows">Windows</label> <meter id="os-windows" value="0.80" style="--v: 0.80">80%</meter>
+</div>
+
+<h3>Programming Languages</h3>
+
+<div>
+    <label for="lang-python">Python</label> <meter id="lang-python" value="0.95" style="--v: 0.95">95%</meter>
+    <label for="lang-cpp">C++</label> <meter id="lang-cpp" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="lang-javascript">JavaScript</label> <meter id="lang-javascript" value="0.79" style="--v: 0.79">79%</meter>
+    <label for="lang-c">C</label> <meter id="lang-c" value="0.75" style="--v: 0.75">75%</meter>
+    <label for="lang-bash">Bash</label> <meter id="lang-bash" value="0.30" style="--v: 0.30">30%</meter>
+</div>
+
+<h3>Other Languages</h3>
+
+<div>
+    <label for="lang-markdown">Markdown</label> <meter id="lang-markdown" value="0.95" style="--v: 0.95">95%</meter>
+    <label for="lang-json">JSON</label> <meter id="lang-json" value="0.95" style="--v: 0.95">95%</meter>
+    <label for="lang-html5">HTML5</label> <meter id="lang-html5" value="0.90" style="--v: 0.90">90%</meter>
+    <label for="lang-css">CSS</label> <meter id="lang-css" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="lang-yaml">YAML</label> <meter id="lang-yaml" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="lang-makefile">Makefile</label> <meter id="lang-makefile" value="0.70" style="--v: 0.70">70%</meter>
+    <label for="lang-xml">XML</label> <meter id="lang-xml" value="0.60" style="--v: 0.60">60%</meter>
+    <label for="lang-svg">SVG</label> <meter id="lang-svg" value="0.60" style="--v: 0.60">60%</meter>
+    <label for="lang-latex">LaTeX</label> <meter id="lang-latex" value="0.20" style="--v: 0.20">20%</meter>
+</div>
+
+<h3>Frameworks</h3>
+
+<div>
+    <label for="framework-tornado">Tornado</label> <meter id="framework-tornado" value="0.95" style="--v: 0.95">95%</meter>
+    <label for="framework-dask">Dask</label> <meter id="framework-dask" value="0.70" style="--v: 0.70">70%</meter>
+</div>
+
+<h3>Tools</h3>
+
+<div>
+    <label for="tool-git">Git</label> <meter id="tool-git" value="0.95" style="--v: 0.95">95%</meter>
+    <label for="tool-docker">Docker</label> <meter id="tool-docker" value="0.87" style="--v: 0.87">87%</meter>
+    <label for="tool-uv">uv</label> <meter id="tool-uv" value="0.85" style="--v: 0.85">85%</meter>
+    <label for="tool-ruff">ruff</label> <meter id="tool-ruff" value="0.85" style="--v: 0.85">85%</meter>
+    <label for="tool-pyright">pyright</label> <meter id="tool-pyright" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="tool-jj">jj</label> <meter id="tool-jj" value="0.75" style="--v: 0.75">75%</meter>
+    <label for="tool-copier">Copier</label> <meter id="tool-copier" value="0.75" style="--v: 0.75">75%</meter>
+    <label for="tool-opencode">OpenCode</label> <meter id="tool-opencode" value="0.70" style="--v: 0.70">70%</meter>
+    <label for="tool-inkscape">Inkscape</label> <meter id="tool-inkscape" value="0.85" style="--v: 0.85">85%</meter>
+    <label for="tool-ms-office">MS Office</label> <meter id="tool-ms-office" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="tool-libreoffice">LibreOffice</label> <meter id="tool-libreoffice" value="0.80" style="--v: 0.80">80%</meter>
+    <label for="tool-gimp">GIMP</label> <meter id="tool-gimp" value="0.70" style="--v: 0.70">70%</meter>
+    <label for="tool-vim">Vim</label> <meter id="tool-vim" value="0.80" style="--v: 0.80">80%</meter>
+</div>
+
+</body>
+</html>
